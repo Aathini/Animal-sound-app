@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Animal Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> <!--Links to the bootstrap library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script> <!--Linking to ML5 library-->
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class = "header_div col-xs-12 text-center">
+  <h2>Animal recognizers!</h2>
+  <p>Note: Play different animals sounds like barking, meowing, mooing or roaring to identify the sounds!</p> 
+    </div>
+    <div class = "main_div">
+      <center>
+       <button class = "btn btn-warning" onclick = "startclassification()">Start</button> <!--Btn will remove the default background and default border and btn-warning willl apply the orange color to the border and background-->
+       <h3 id = "result_label">I can hear - </h3>
+       <h4 id = result_confidence>Accuracy - </h4>
+       <br>
+       <img src = "th.jpeg" id = "Dog" width = "300" height = "300">
+       <img src = "th (2).jpeg" id = "Cat" width = "300" height = "300">
+       <img src = "c638d0e5a3cddc999f9c580f48c3ed53.jpg" id = "Cow" width = "300" height = "300">
+       <img src = "th (1).jpeg" id = "Lion" width = "300" height = "300">
+      </center>
+    </div>
+    <div class = "copyrightfooter">Developed by Aathini</div>
+<script src="main.js"></script>
+  </body>
+</html>
